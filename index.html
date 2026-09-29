@@ -190,10 +190,10 @@ function hit(e,idx){
  if(room&&idx==0)ban(room.L[turn==-1?1:2]);
 }
 const R=[
- {n:'Çay Ocağı',ch:'Çaylak Can',e:'🧒',fee:50,dp:0,d:'Yeni başlayanların odası',L:['Ben hazırım, çay da taze!','Ooo, bu taş benim!','Yok artık, nasıl yedin?','Yendim! Bir çay ısmarla.','Peki peki, sen kazandın…']},
- {n:'Kahvehane',ch:'Kahveci Selim',e:'☕',fee:200,dp:2,d:'Bol sohbetli, sinsi hamleli',L:['Bir kahve, bir dama, ne güzel.','Bunu görmemiştin ha?','Hımm, sağlam hamle.','Kahve benden, oyun benden.','Helal olsun, bu sefer senin.']},
- {n:'Meydan',ch:'Usta Hoca',e:'🧙',fee:500,dp:4,d:'Mahallenin şampiyonu',L:['Gel bakalım evlat.','Mahallenin kuralı bu.','Şansına bir taş aldın.','Daha çok pilav yemen lazım.','Tebrikler, hak ettin.']},
- {n:'Saray',ch:'Sultan',e:'👑',fee:2000,dp:5,d:'Kaybedeni affetmez',L:['Huzurumda oynamaya cesaret mi?','Cüretin bedeli ağır.','Bir taş… Sadece bir taş.','Saraydan eli boş dönersin.','Tahtı sana bırakıyorum…']}
+ {n:'Çay Ocağı',ch:'Çaylak Alp',e:'🧒',fee:50,dp:0,d:'Yeni başlayanların odası',L:['Ben hazırım, çay da taze!','Ooo, bu taş benim!','Yok artık, nasıl yedin?','Yendim! Bir çay ısmarla.','Peki peki, sen kazandın…']},
+ {n:'Kahvehane',ch:'Kahveci Fatma',e:'☕',fee:200,dp:2,d:'Bol sohbetli, sinsi hamleli',L:['Bir kahve, bir dama, ne güzel.','Bunu görmemiştin ha?','Hımm, sağlam hamle.','Kahve benden, oyun benden.','Helal olsun, bu sefer senin.']},
+ {n:'Meydan',ch:'Usta Hoca ALPER',e:'🧙',fee:500,dp:4,d:'Mahallenin şampiyonu',L:['Gel bakalım evlat.','Mahallenin kuralı bu.','Şansına bir taş aldın.','Daha çok pilav yemen lazım.','Tebrikler, hak ettin.']},
+ {n:'Saray',ch:'Sultan ALPER BOZKURT',e:'👑',fee:2000,dp:5,d:'Kaybedeni affetmez',L:['Huzurumda oynamaya cesaret mi?','Cüretin bedeli ağır.','Bir taş… Sadece bir taş.','Saraydan eli boş dönersin.','Tahtı sana bırakıyorum…']}
 ];
 function ban(t){$('#ban').innerHTML=`<div class="av">${room.e}</div><div class="fx"><b>${room.ch}</b> · ${room.n}<br><span class="sp">“${t}”</span></div><div class="pot">Havuz<br><b>${room.fee*2} 🪙</b></div>`}
 function lobby(){
